@@ -1,0 +1,65 @@
+.articles-title {
+  width: 60%;
+  font-size: 2.4rem;
+  color: $mainColor;
+  margin-top: 5.5rem;
+  margin-left: 2.6rem;
+  &-h2 {
+    position: relative;
+    width: 70%;
+    &::after {
+      content: " ";
+      height: .3rem;
+      width: 5.3rem;
+      background: $mainColor;
+      position: absolute;
+      bottom: 10%;
+      right: 10%;
+    }
+  }
+}
+.articleContainer {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3.2rem;
+  &-article {
+    display: flex;
+    justify-content: flex-start;
+    height: 11rem;
+    border-bottom: 3px solid rgba(#000, .16);
+    margin-top: 3rem; 
+    &-img {
+      height: 9rem;
+      width: 12rem;
+      overflow: hidden;
+      margin-left: 1.4rem;
+      align-self: center;
+    }
+    &-titleContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 1.6rem;
+      color: $mainColor;
+      margin: 1rem 2.5rem;
+    }
+    &-details {
+      display: flex;
+      justify-content: space-between;
+      color: rgba($mainColor, .5);
+      font-size: 1.2rem;
+      &-date{
+        position: relative;
+        &::after {
+          content: " ";
+          position: absolute;
+          bottom: 40%;
+          left: 110%;
+          height: .1rem;
+          width: 3rem;
+          background: rgba($mainColor, .5);
+        }
+      }
+    }
+  }
+}

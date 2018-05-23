@@ -1,0 +1,14 @@
+.search {
+  position: fixed;
+  top: 0;
+  width: 90%;
+  height: 7rem;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 26%,rgba(255,255,255,0.88) 50%,rgba(255,255,255,0.8) 67%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // background: red;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2.25rem;
+  padding-top: 2.25rem;
+  font-size: 2.5rem;
+  z-index: 2;
+}
