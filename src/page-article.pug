@@ -7,9 +7,25 @@ html
     link(href="https://fonts.googleapis.com/css?family=Domine:400,700|Montserrat:400,500,500i,700" rel="stylesheet")
     title semaine intensive yolo
   body
+    header.header.desktopFlex
+      .header-logo.desktop
+        img(src="styles/img/logo.png")
+      .header-text.desktop
+        p Un mook collector  Des fiches pratiques <br> Une application  Un site
+    
+    
+    
     .search.arrow
-      i.fas.fa-arrow-left
-      i.fas.fa-search
+      i.fas.fa-arrow-left.mobile
+      i.fas.fa-search.mobile
+      .nav.desktopFlex
+        a(href="#") Home
+        a(href="#") About
+        a(href="#") lorem
+      .nav-icons.desktopFlex
+        i.fas.fa-search
+        i.fas.fa-user
+                          
     .article-pageContainer
       .article-pageContainer-img
         img(src="styles/img/man-pan-400429-unsplash.jpg" alt="#")
@@ -18,7 +34,7 @@ html
         h3.article-pageContainer-title-h3 Découvrir nos articles
       .article-pageContainer-text
         p.article-pageContainer-text-p Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. Lorem pqsjeipfjmiqesonuvimcjqisjt nrpopularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. Lorem pqsjeipfjmiqesonuvimcjqisjt nrpopularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. Lorem pqsjeipfjmiqesonuvimcjqisjt nrpopularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus
-    footer.footer
+    footer.footer.mobile
       .footer-home
         a(href="#") Accueil
       .footer-profile

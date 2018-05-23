@@ -1109,6 +1109,14 @@ html {
   padding-top: 2.25rem;
   font-size: 2.5rem;
   z-index: 2; }
+  @media (min-width: 1024px) {
+    .search, .arrow {
+      position: relative;
+      align-items: center;
+      justify-content: space-between;
+      height: 5rem;
+      padding: 0;
+      background: grey; } }
   .search i, .arrow i {
     margin-right: 2.25rem; }
 
@@ -1116,6 +1124,35 @@ html {
   display: flex;
   justify-content: space-between;
   padding-left: 2.25rem; }
+
+.header {
+  justify-content: space-between;
+  background: #000;
+  width: 100%;
+  height: 8.5rem;
+  display: flex;
+  align-items: center;
+  z-index: 2; }
+  .header-logo {
+    height: 6rem;
+    width: 14rem;
+    margin-left: 2.25rem; }
+    .header-logo img {
+      width: 100%;
+      height: 100%; }
+  .header-text {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    margin-right: 2.25rem; }
+
+.nav {
+  font-size: 1.4rem; }
+  .nav a {
+    color: #FFFFFF;
+    margin-left: 3rem; }
+  .nav-icons {
+    align-items: center;
+    color: #FFFFFF; }
 
 .footer {
   display: flex;
@@ -1141,6 +1178,22 @@ html {
   width: 100%; }
 
 ::selection {
-  background-color: #b3d4fc;
+  background-color: #EDCB96;
   color: #000;
   text-shadow: none; }
+
+.desktop {
+  display: none; }
+  @media (min-width: 1024px) {
+    .desktop {
+      display: block; } }
+
+.desktopFlex {
+  display: none; }
+  @media (min-width: 1024px) {
+    .desktopFlex {
+      display: flex; } }
+
+@media (min-width: 1024px) {
+  .mobile {
+    display: none; } }
