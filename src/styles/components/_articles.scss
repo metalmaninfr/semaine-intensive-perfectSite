@@ -1,12 +1,22 @@
+.articlesContainer {
+  @include for-size(desktop-up) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .articles-title {
   width: 60%;
   font-size: 2.4rem;
   color: $mainColor;
   margin-top: 5.5rem;
   margin-left: 2.6rem;
+  @include for-size(desktop-up) {
+    width: 30%;
+    margin-top: 3.2rem;
+  }
   &-h2 {
     position: relative;
-    width: 70%;
+    width: 15rem;
     &::after {
       content: " ";
       height: .3rem;
@@ -20,21 +30,38 @@
 }
 .articleContainer {
   width: 100%;
-  margin: 0 auto;
   margin-top: 3.2rem;
   margin-bottom: 6rem;
+  @include for-size(desktop-up) {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+  }
   &-article {
     display: flex;
     justify-content: flex-start;
     height: 16rem;
     border-bottom: 3px solid rgba(#000, .16);
     margin-top: 3rem;
+    @include for-size(desktop-up) {
+      width: 100%;
+      margin-top: 0;
+      border-bottom: none;
+      display: block;
+    }
     &-img {
       height: 9rem;
       width: 12rem;
       overflow: hidden;
       margin-left: 1.4rem;
       align-self: center;
+    @include for-size(desktop-up) {
+      height: 10rem;
+      width: 50%;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      }
     }
     &-titleContainer {
       display: flex;
@@ -43,12 +70,20 @@
       font-size: 1.6rem;
       color: $mainColor;
       margin: 4rem 2.5rem;
+      @include for-size(desktop-up) {
+        margin: 2rem 0;
+        text-align: center;
+      }
     }
     &-details {
       display: flex;
       justify-content: space-between;
       color: rgba($mainColor, .5);
       font-size: 1.2rem;
+      @include for-size(desktop-up) {
+        align-items: center;
+        margin: .5rem 30%;
+      }
       &-date{
         position: relative;
         &::after {
@@ -59,6 +94,9 @@
           height: .1rem;
           width: 3rem;
           background: rgba($mainColor, .5);
+          @include for-size(desktop-up) {
+            display: none;
+          }
         }
       }
     }

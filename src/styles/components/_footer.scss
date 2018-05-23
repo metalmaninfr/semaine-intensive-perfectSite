@@ -16,3 +16,53 @@
     margin-right: 4rem;
   }
 }
+
+
+.footerDesktop {
+  background: #F7F7F7;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-containterLeft {
+    padding-top: 6.1rem;
+    padding-bottom: 3rem;
+    &-list {
+      display: flex;
+      & li a {
+        color: $mainColor;
+        font-size: 1.6rem;
+        margin-left: 4.5rem;
+        &:first-child {
+          margin-left: 1.7rem;
+        }
+      }
+    }
+    &-text {
+      font-size: 1.4rem;
+      color: $mainColor;
+      margin-top: 5.3rem;
+      margin-left: 1.7rem;
+      line-height: 1.5;
+    }
+  }
+  &-containerRight {
+    padding-top: 6.1rem;
+    margin-right: 4rem;
+    &-contact {
+      &-tel {
+        font-size: 1.8rem;
+        color: $mainColor;
+        padding: 1.5rem;
+        background: $secondaryColor;
+      }
+    }
+    &-social {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 4.4rem;
+      font-size: 2rem;
+      color: $mainColor;
+    }
+  }
+}
