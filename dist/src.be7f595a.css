@@ -1020,13 +1020,14 @@ html {
       right: 10%; }
 
 .articleContainer {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  margin-top: 3.2rem; }
+  margin-top: 3.2rem;
+  margin-bottom: 6rem; }
   .articleContainer-article {
     display: flex;
     justify-content: flex-start;
-    height: 11rem;
+    height: 16rem;
     border-bottom: 3px solid rgba(0, 0, 0, 0.16);
     margin-top: 3rem; }
     .articleContainer-article-img {
@@ -1041,7 +1042,7 @@ html {
       justify-content: space-between;
       font-size: 1.6rem;
       color: #000;
-      margin: 1rem 2.5rem; }
+      margin: 4rem 2.5rem; }
     .articleContainer-article-details {
       display: flex;
       justify-content: space-between;
@@ -1058,19 +1059,63 @@ html {
           width: 3rem;
           background: rgba(0, 0, 0, 0.5); }
 
-.search {
+.article-pageContainer {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 9rem; }
+  .article-pageContainer-img {
+    position: relative;
+    height: 16.2rem;
+    width: 100%;
+    overflow: hidden; }
+    .article-pageContainer-img img {
+      height: 100%;
+      width: 100%; }
+    .article-pageContainer-img-p {
+      position: absolute;
+      padding: 1rem;
+      font-size: 1.4rem;
+      background: #000;
+      bottom: 0;
+      left: 0;
+      color: #FFFFFF; }
+  .article-pageContainer-title {
+    font-size: 2.4rem;
+    margin: 4.7rem 0;
+    width: 60%; }
+    .article-pageContainer-title-h3 {
+      position: relative; }
+      .article-pageContainer-title-h3::after {
+        content: " ";
+        height: .3rem;
+        width: 5.3rem;
+        background: #000;
+        position: absolute;
+        bottom: 10%;
+        left: 10rem; }
+  .article-pageContainer-text {
+    font-size: 1.4rem;
+    line-height: 1.5; }
+
+.search, .arrow {
   position: fixed;
   top: 0;
-  width: 90%;
-  height: 7rem;
+  width: 100%;
+  height: 8.5rem;
   background: linear-gradient(to bottom, white 0%, white 26%, rgba(255, 255, 255, 0.88) 50%, rgba(255, 255, 255, 0.8) 67%, rgba(255, 255, 255, 0) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   display: flex;
   justify-content: flex-end;
-  margin-right: 2.25rem;
   padding-top: 2.25rem;
   font-size: 2.5rem;
   z-index: 2; }
+  .search i, .arrow i {
+    margin-right: 2.25rem; }
+
+.arrow {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2.25rem; }
 
 .footer {
   display: flex;
