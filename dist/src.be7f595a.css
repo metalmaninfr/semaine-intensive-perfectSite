@@ -1026,10 +1026,13 @@ html {
     margin-top: 10rem;
     animation: fadeOut 1.5s ease-in; }
 
-@media (min-width: 1024px) {
-  .articlesContainer {
-    display: flex;
-    flex-wrap: wrap; } }
+.articlesContainer {
+  margin-bottom: 10rem; }
+  @media (min-width: 1024px) {
+    .articlesContainer {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 0rem; } }
 
 .articles-title {
   width: 60%;
@@ -1039,7 +1042,7 @@ html {
   margin-left: 2.6rem; }
   @media (min-width: 1024px) {
     .articles-title {
-      width: 27.8%;
+      width: 27.9%;
       margin-top: 3.2rem;
       margin-left: 4rem; } }
   .articles-title-h2 {
@@ -1055,7 +1058,9 @@ html {
       bottom: 10%;
       right: 10%; }
   .articles-title p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    width: 80%;
     margin-top: 2rem; }
 
 .articleContainer {
@@ -1076,7 +1081,8 @@ html {
         width: 100%;
         margin-top: 0;
         border-bottom: none;
-        display: block; } }
+        display: block;
+        height: auto; } }
     .articleContainer-article-img {
       height: 9rem;
       width: 12rem;
@@ -1085,8 +1091,8 @@ html {
       align-self: center; }
       @media (min-width: 1024px) {
         .articleContainer-article-img {
-          height: 15rem;
-          width: 50%;
+          width: 70%;
+          height: auto;
           margin-left: 50%;
           transform: translateX(-50%); } }
     .articleContainer-article-titleContainer {

@@ -1,7 +1,9 @@
 .articlesContainer {
+    margin-bottom: 10rem;
   @include for-size(desktop-up) {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 0rem;
   }
 }
 .articles-title {
@@ -11,7 +13,7 @@
   margin-top: 7rem;
   margin-left: 2.6rem;
   @include for-size(desktop-up) {
-    width: 27.8%;
+    width: 27.9%;
     margin-top: 3.2rem;
     margin-left: 4rem;
   }
@@ -30,7 +32,9 @@
     }
   }
   & p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    width: 80%;
     margin-top: 2rem;
   }
 }
@@ -52,6 +56,7 @@
       margin-top: 0;
       border-bottom: none;
       display: block;
+      height: auto;
     }
     &-img {
       height: 9rem;
@@ -60,8 +65,8 @@
       margin-left: 1.4rem;
       align-self: center;
     @include for-size(desktop-up) {
-      height: 15rem;
-      width: 50%;
+      width: 70%;
+      height: auto;
       margin-left: 50%;
       transform: translateX(-50%);
       }
