@@ -1002,7 +1002,7 @@ html {
   font-size: 62.5%; }
 
 .loadingOverlay {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -1035,15 +1035,17 @@ html {
   width: 60%;
   font-size: 2.4rem;
   color: #000;
-  margin-top: 5.5rem;
+  margin-top: 7rem;
   margin-left: 2.6rem; }
   @media (min-width: 1024px) {
     .articles-title {
-      width: 30%;
-      margin-top: 3.2rem; } }
+      width: 27.8%;
+      margin-top: 3.2rem;
+      margin-left: 4rem; } }
   .articles-title-h2 {
     position: relative;
-    width: 15rem; }
+    width: 15rem;
+    margin-bottom: 3rem; }
     .articles-title-h2::after {
       content: " ";
       height: .3rem;
@@ -1052,11 +1054,12 @@ html {
       position: absolute;
       bottom: 10%;
       right: 10%; }
+  .articles-title p {
+    font-size: 1.4rem;
+    margin-top: 2rem; }
 
 .articleContainer {
-  width: 100%;
-  margin-top: 3.2rem;
-  margin-bottom: 6rem; }
+  width: 100%; }
   @media (min-width: 1024px) {
     .articleContainer {
       width: 30%;
@@ -1067,8 +1070,7 @@ html {
     display: flex;
     justify-content: flex-start;
     height: 16rem;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.16);
-    margin-top: 3rem; }
+    border-bottom: 2px solid rgba(0, 0, 0, 0.16); }
     @media (min-width: 1024px) {
       .articleContainer-article {
         width: 100%;
@@ -1083,7 +1085,7 @@ html {
       align-self: center; }
       @media (min-width: 1024px) {
         .articleContainer-article-img {
-          height: 10rem;
+          height: 15rem;
           width: 50%;
           margin-left: 50%;
           transform: translateX(-50%); } }
@@ -1102,11 +1104,13 @@ html {
       display: flex;
       justify-content: space-between;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      width: 85%; }
       @media (min-width: 1024px) {
         .articleContainer-article-details {
           align-items: center;
-          margin: .5rem 30%; } }
+          width: 30%;
+          margin: 0 auto; } }
       .articleContainer-article-details-date {
         position: relative; }
         .articleContainer-article-details-date::after {
@@ -1222,6 +1226,9 @@ html {
   display: flex;
   justify-content: space-between;
   padding-left: 2.25rem; }
+  @media (min-width: 1024px) {
+    .arrow {
+      padding-left: 4rem; } }
 
 .header {
   justify-content: space-between;
@@ -1247,7 +1254,7 @@ html {
   font-size: 1.4rem; }
   .nav a {
     color: #000;
-    margin-left: 4rem; }
+    margin-right: 4rem; }
   .nav-icons {
     align-items: center;
     color: #000; }
@@ -1270,6 +1277,7 @@ html {
 
 .footerDesktop {
   position: relative;
+  bottom: -136px;
   background: #F7F7F7; }
   .footerDesktop-line {
     position: absolute;

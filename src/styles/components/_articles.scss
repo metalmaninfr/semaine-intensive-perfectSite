@@ -8,15 +8,17 @@
   width: 60%;
   font-size: 2.4rem;
   color: $mainColor;
-  margin-top: 5.5rem;
+  margin-top: 7rem;
   margin-left: 2.6rem;
   @include for-size(desktop-up) {
-    width: 30%;
+    width: 27.8%;
     margin-top: 3.2rem;
+    margin-left: 4rem;
   }
   &-h2 {
     position: relative;
     width: 15rem;
+    margin-bottom: 3rem;
     &::after {
       content: " ";
       height: .3rem;
@@ -27,11 +29,13 @@
       right: 10%;
     }
   }
+  & p {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+  }
 }
 .articleContainer {
   width: 100%;
-  margin-top: 3.2rem;
-  margin-bottom: 6rem;
   @include for-size(desktop-up) {
     width: 30%;
     display: flex;
@@ -42,8 +46,7 @@
     display: flex;
     justify-content: flex-start;
     height: 16rem;
-    border-bottom: 3px solid rgba(#000, .16);
-    margin-top: 3rem;
+    border-bottom: 2px solid rgba(#000, .16);
     @include for-size(desktop-up) {
       width: 100%;
       margin-top: 0;
@@ -57,7 +60,7 @@
       margin-left: 1.4rem;
       align-self: center;
     @include for-size(desktop-up) {
-      height: 10rem;
+      height: 15rem;
       width: 50%;
       margin-left: 50%;
       transform: translateX(-50%);
@@ -80,9 +83,11 @@
       justify-content: space-between;
       color: rgba($mainColor, .5);
       font-size: 1.2rem;
+      width: 85%;
       @include for-size(desktop-up) {
         align-items: center;
-        margin: .5rem 30%;
+        width: 30%;
+        margin: 0 auto;
       }
       &-date{
         position: relative;
