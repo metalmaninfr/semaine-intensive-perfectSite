@@ -56,14 +56,18 @@
   &-titleContainer {
     border-bottom: 2px solid rgba(#000, .1);
     padding-bottom: 2.25rem;
+    @include for-size(desktop-up) {
+      border: none;
+    }
     &-title {
       margin-top: 3.8rem;
-      margin-left: 4rem;
+      margin-left: 1.5rem;
       width: 20rem;
       font-size: 2.4rem;
       @include for-size(desktop-up) {
         font-size: 3.8rem;
         width: 40rem;
+        margin-left: 7rem;
       }
       & h2 {
         position: relative;
@@ -85,9 +89,14 @@
   }
   &-twitterFeed {
     margin-bottom: 15rem;
-    margin-left: 4rem;
+    margin-left: 2.4rem;
     width: 22rem;
     font-size: 2.4rem;
+    @include for-size(desktop-up) {
+      font-size: 3.8rem;
+      width: 33rem;
+      margin-left: 7rem;
+    }
     & h2 {
       position: relative;
       line-height: 1.5;
@@ -108,11 +117,15 @@
 .bonPlansTitle {
   font-size: 2.4rem;
   margin-top: 3.8rem;
-  margin-left: 4rem;
+  margin-left: 2.4rem;
   width: 18rem;
   font-size: 2.4rem;
   line-height: 1.5;
-
+  @include for-size(desktop-up) {
+    font-size: 3.8rem;
+    width: 29rem;
+    margin-left: 7rem;
+  }
   & h2 {
     position: relative;
     &::after {
@@ -138,7 +151,7 @@
     margin: 0 auto;
     @include for-size(desktop-up) {
       width: 85%;
-      margin-left: 7rem;
+      margin-left: 8rem;
       margin-right: 7rem;
     }
   }
@@ -157,7 +170,7 @@ a {
       margin-bottom: 16px;
       @include for-size(desktop-up) {
         height: 230px;
-        width: 400px;
+        width: 360px;
       }
       .backgroundImg {
         position: absolute;

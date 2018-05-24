@@ -1052,15 +1052,19 @@ html {
 .mainPage-titleContainer {
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 2.25rem; }
+  @media (min-width: 1024px) {
+    .mainPage-titleContainer {
+      border: none; } }
   .mainPage-titleContainer-title {
     margin-top: 3.8rem;
-    margin-left: 4rem;
+    margin-left: 1.5rem;
     width: 20rem;
     font-size: 2.4rem; }
     @media (min-width: 1024px) {
       .mainPage-titleContainer-title {
         font-size: 3.8rem;
-        width: 40rem; } }
+        width: 40rem;
+        margin-left: 7rem; } }
     .mainPage-titleContainer-title h2 {
       position: relative;
       line-height: 1.5; }
@@ -1078,9 +1082,14 @@ html {
 
 .mainPage-twitterFeed {
   margin-bottom: 15rem;
-  margin-left: 4rem;
+  margin-left: 2.4rem;
   width: 22rem;
   font-size: 2.4rem; }
+  @media (min-width: 1024px) {
+    .mainPage-twitterFeed {
+      font-size: 3.8rem;
+      width: 33rem;
+      margin-left: 7rem; } }
   .mainPage-twitterFeed h2 {
     position: relative;
     line-height: 1.5; }
@@ -1096,10 +1105,15 @@ html {
 .bonPlansTitle {
   font-size: 2.4rem;
   margin-top: 3.8rem;
-  margin-left: 4rem;
+  margin-left: 2.4rem;
   width: 18rem;
   font-size: 2.4rem;
   line-height: 1.5; }
+  @media (min-width: 1024px) {
+    .bonPlansTitle {
+      font-size: 3.8rem;
+      width: 29rem;
+      margin-left: 7rem; } }
   .bonPlansTitle h2 {
     position: relative; }
     .bonPlansTitle h2::after {
@@ -1122,7 +1136,7 @@ html {
     @media (min-width: 1024px) {
       .bonPlansContianer-main {
         width: 85%;
-        margin-left: 7rem;
+        margin-left: 8rem;
         margin-right: 7rem; } }
 
 a .recommandationElement {
@@ -1139,7 +1153,7 @@ a .recommandationElement {
     @media (min-width: 1024px) {
       a .recommandationElement .background {
         height: 230px;
-        width: 400px; } }
+        width: 360px; } }
     a .recommandationElement .background .backgroundImg {
       position: absolute;
       bottom: -70px;
@@ -1372,7 +1386,8 @@ a .recommandationElement {
   z-index: 2; }
   @media (min-width: 1024px) {
     .search, .arrow {
-      position: relative;
+      position: fixed;
+      top: 8.5rem;
       align-items: center;
       justify-content: space-between;
       height: 5rem;
@@ -1390,6 +1405,8 @@ a .recommandationElement {
       padding-left: 4rem; } }
 
 .header {
+  position: fixed;
+  top: 0;
   justify-content: space-between;
   background: #F7F7F7;
   width: 100%;
