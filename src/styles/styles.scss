@@ -7,10 +7,14 @@
 @import './mixins/button';
 @import './mixins/mixins';
 // components
+@import './components/mainPage';
 @import './components/articles';
 @import './components/articlesPage';
 @import './components/search';
 @import './components/footer';
+@import './components/keyframes';
+
+
 
 * {
   box-sizing: border-box;

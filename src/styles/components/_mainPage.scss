@@ -1,0 +1,28 @@
+.loadingOverlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  z-index: 5;
+  animation: fadeOut 3s ease-in;
+  &-img {
+    height: 15rem;
+    width: 15rem;
+    animation: fadeOut 1.5s ease-in;
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-text {
+    font-size: 2rem;
+    color: $secondaryColor;
+    text-align: center;
+    margin-top: 10rem;
+    animation: fadeOut 1.5s ease-in;
+  }
+}
