@@ -15,7 +15,7 @@
     justify-content: space-between;
     height: 5rem;
     padding: 0;
-    background: grey;
+    background: $secondaryColor;
   }
   & i {
     margin-right: 2.25rem;
@@ -31,7 +31,7 @@
 
 .header {
     justify-content: space-between;
-    background: $mainColor;
+    background: $white;
     width: 100%;
     height: 8.5rem;
     display: flex;
@@ -40,14 +40,14 @@
     &-logo {
       height: 6rem;
       width: 14rem;
-      margin-left: 2.25rem;
+      margin-left: 4rem;
       & img {
         width: 100%;
         height: 100%;
       }
     }
     &-text {
-      color: $secondaryColor;
+      color: $mainColor;
       font-size: 1.4rem;
       margin-right: 2.25rem;
     }
@@ -56,11 +56,11 @@
 .nav {
   font-size: 1.4rem;
   & a {
-    color: $secondaryColor;
-    margin-left: 3rem;
+    color: $mainColor;
+    margin-left: 4rem;
   }
   &-icons {
     align-items: center;
-    color: $secondaryColor;
+    color: $mainColor;
   }
 }

@@ -1,13 +1,23 @@
 .article-pageContainer {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
   width: 80%;
   margin: 0 auto;
   margin-top: 10rem;
   margin-bottom: 9rem;
+  @include for-size(desktop-up) {
+    margin-top: 1rem;
+  }
   &-img {
     position: relative;
     height: 16.2rem;
     width: 100%;
     overflow: hidden;
+    @include for-size(desktop-up) {
+      height: 40rem;
+      width: 80%;
+      margin: 0 auto;
+    }
     & img {
       height: 100%;
       width: 100%;
@@ -24,10 +34,18 @@
   }
   &-title {
     font-size: 2.4rem;
-    margin: 4.7rem 0;
-    width: 60%;
+    margin: 3.5rem 0;
+    width: 100%;
+    @include for-size(desktop-up) {
+      grid-row: 1;
+      text-align: center;
+    }
     &-h3 {
+      width: 16rem;
       position: relative;
+      @include for-size(desktop-up) {
+        width: 100%;
+      }
       &::after {
         content: " ";
         height: .3rem;
@@ -36,11 +54,30 @@
         position: absolute;
         bottom: 10%;
         left: 10rem;
+        @include for-size(desktop-up) {
+          display: none;
+        }
+      }
+    }
+    &-author {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      color: rgba($mainColor, .5);
+      @include for-size(desktop-up) {
+        width: 25%;
+        margin: 6rem auto 0;
       }
     }
   }
   &-text {
     font-size: 1.4rem;
     line-height: 1.5;
+    @include for-size(desktop-up) {
+      margin: 5rem auto 0;
+      width: 50%;
+    }
   }
 }

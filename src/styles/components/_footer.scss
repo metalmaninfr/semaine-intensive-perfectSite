@@ -17,9 +17,17 @@
   }
 }
 
-
 .footerDesktop {
+  position: relative;
   background: #F7F7F7;
+  &-line {
+    position: absolute;
+    height: .3rem;
+    width: 90%;
+    background: #EBEBEB;
+    left: 5%;
+    top: 11rem;
+  }
   &-container {
     display: flex;
     justify-content: space-between;
