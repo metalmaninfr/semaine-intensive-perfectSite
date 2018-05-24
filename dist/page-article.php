@@ -7,10 +7,10 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Montserrat:400,500,500i,700" rel="stylesheet">
     <title>semaine intensive yolo</title>
-  <link rel="stylesheet" href="/src.be7f595a.css"></head>
+  <link rel="stylesheet" href="src.be7f595a.css"></head>
   <body>
     <header class="header desktopFlex">
-      <div class="header-logo desktop"><img src="/logo.fed09b74.png"></div>
+      <div class="header-logo desktop"><img src="logo.fed09b74.png"></div>
       <div class="header-text desktop">
         <p>Un mook collector .  Une application  . Un site</p>
       </div>
@@ -19,19 +19,38 @@
       <div class="nav desktopFlex"><a href="#">Home</a><a href="#">About</a><a href="#">lorem</a></div>
       <div class="nav-icons desktopFlex"><i class="fas fa-search"></i><i class="fas fa-user"></i></div>
     </div>
+    <?php
+
+    require_once "assets/includes/connection.php";
+
+    $reqSql = $reqSql = 'SELECT
+    `id`,`category`,`title`,`sub-title`,`img`,`p`,`auteur`,`logo`
+    FROM
+    `article`
+    WHERE
+    `id`=:id';
+    ;
+    $req = $pdo->prepare($reqSql);
+    $req->bindValue(':id',$_GET['id'], PDO::PARAM_INT);
+    $req->execute();
+
+    $row = $req ->fetch(PDO::FETCH_ASSOC);
+
+    ?>
     <div class="article-pageContainer">
-      <div class="article-pageContainer-img"><img src="/man-pan-400429-unsplash.463e8c38.jpg" alt="#">
-        <p class="article-pageContainer-img-p">culture</p>
+      <div class="article-pageContainer-img"><img src="assets/crudArticle/img/<?=$row['img']?>" alt="#">
+        <p class="article-pageContainer-img-p"><?=$row['category']?></p>
       </div>
       <div class="article-pageContainer-title">
-        <h3 class="article-pageContainer-title-h3">Découvrir nos articles</h3>
+        <h3 class="article-pageContainer-title-h3"><?=$row['title']?></h3>
         <div class="article-pageContainer-title-author">
-          <p>24 novembre 2019</p>
-          <p>Fabrice Luchini</p>
+          <p><?php setlocale(LC_TIME, 'fr', 'fr_FR', 'fr_FR.ISO8859-1');
+              echo strftime("%A %d %B %Y");?></p>
+          <p><?=$row['auteur']?></p>
         </div>
       </div>
       <div class="article-pageContainer-text">
-        <p class="article-pageContainer-text-p">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. Lorem pqsjeipfjmiqesonuvimcjqisjt nrpopularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. Lorem pqsjeipfjmiqesonuvimcjqisjt nrpopularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. Lorem pqsjeipfjmiqesonuvimcjqisjt nrpopularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus</p>
+        <p class="article-pageContainer-text-p"><?=$row['p']?></p>
       </div>
     </div>
     <footer class="footer mobile">
@@ -58,6 +77,6 @@
         </div>
       </div>
     </footer>
-    <script src="/src.be7f595a.js"> </script>
+    <script src="src.be7f595a.js"> </script>
   </body>
 </html>

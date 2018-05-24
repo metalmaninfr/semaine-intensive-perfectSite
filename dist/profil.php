@@ -7,10 +7,10 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Montserrat:400,500,500i,700" rel="stylesheet">
     <title>semaine intensive yolo</title>
-  <link rel="stylesheet" href="/src.be7f595a.css"></head>
+  <link rel="stylesheet" href="src.be7f595a.css"></head>
   <body>
     <header class="header desktopFlex">
-      <div class="header-logo desktop"><img src="/logo.fed09b74.png"></div>
+      <div class="header-logo desktop"><img src="logo.fed09b74.png"></div>
       <div class="header-text desktop">
         <p>Un mook collector .  Une application  . Un site</p>
       </div>
@@ -21,11 +21,29 @@
       <div class="nav-icons desktopFlex"><i class="fas fa-search"></i><i class="fas fa-user"></i></div>
     </div>
     <div class="profileHeader">     
-      <div class="profileheader-picture"><img src="/man-pan-400429-unsplash.463e8c38.jpg"></div>
-      <div class="profileHeader-text">monsieur / Madame. Connectez vous si vous le voulez </div>
+      <div class="profileheader-picture"><img src="man-pan-400429-unsplash.463e8c38.jpg"></div>
+      <div class="profileHeader-text"><?php
+
+          session_start();
+          if (isset($_SESSION['username']))
+          {
+              echo $_SESSION['username'];
+          }
+          else
+              echo 'monsieur / Madame. Connectez vous si vous le voulez ';
+          ?></div>
     </div>
     <div class="profileConnect">
-      <input type="submit" value="Connection">
+        <?php
+
+        if (isset($_SESSION['username']))
+        {
+            echo "<a href='assets/authentification/logout.php' ><input type=\"submit\" name=\"connexion\" value=\"Deconnexion\"></a>";
+        }
+        else
+            echo "<a href='assets/authentification/login.php' ><input type=\"submit\" name=\"connexion\" value=\"Connexion\"></a>";
+        ?>
+
     </div>
     <div class="profileContainer">
       <div><a href="#">- A propos</a></div>
@@ -37,6 +55,6 @@
       <div class="footer-home"><a href="#">Accueil</a></div>
       <div class="footer-profile"><a href="#">Profil</a></div>
     </footer>
-    <script src="/src.be7f595a.js"></script>
+    <script src="src.be7f595a.js"></script>
   </body>
 </html>

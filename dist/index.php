@@ -7,10 +7,10 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Montserrat:400,500,500i,700" rel="stylesheet">
     <title>semaine intensive yolo</title>
-  <link rel="stylesheet" href="/src.9b8776ed.css"></head>
+  <link rel="stylesheet" href="src.be7f595a.css"></head>
   <body>
     <header class="header desktopFlex">
-      <div class="header-logo desktop"><img src="/logo.d0d74df5.png"></div>
+      <div class="header-logo desktop"><img src="logo.fed09b74.png"></div>
       <div class="header-text desktop">
         <p>Un mook collector .  Une application  . Un site</p>
       </div>
@@ -18,17 +18,17 @@
     <div class="search arrow">
       <div class="mobile"></div><i class="fas fa-search mobile"></i>
       <div class="nav desktopFlex"><a href="#">Articles</a><a href="#">Nos classements</a><a href="#">Nos bons plans</a></div>
-      <div class="nav-icons desktopFlex"><i class="fas fa-search"></i><i class="fas fa-user"></i></div>
+        <div class="nav-icons desktopFlex"><i class="fas fa-search"></i><a href="profil.php"><i class="fas fa-user"></i></a></div>
     </div>
     <div class="loadingOverlay">
-      <div class="loadingOverlay-img"><img src="/logo-blanc.d1aef80b.png"></div>
+      <div class="loadingOverlay-img"><img src="logo-blanc.53129400.png"></div>
       <div class="loadingOverlay-text">
         <p>Des voyages testés... Des idées <br> pour partir toute l'année !</p>
       </div>
     </div>
     <div class="mainPage">
       <div class="backdrop">
-        <div class="backdrop-img"><img src="/uadv-couv.e2c2aba6.jpg"></div>
+        <div class="backdrop-img"><img src="uadv-couv.dc3c3668.jpg"></div>
       </div>
       <div class="mainPage-titleContainer">
         <div class="mainPage-titleContainer-title">
@@ -37,7 +37,7 @@
       </div>
       <div class="mainPageContainerarticles">
         <div class="articleContainer"><a href="#">
-            <div class="articleContainer-article"><img class="articleContainer-article-img" src="/man-pan-400429-unsplash.fc8ca040.jpg">
+            <div class="articleContainer-article"><img class="articleContainer-article-img" src="man-pan-400429-unsplash.463e8c38.jpg">
               <div class="articleContainer-article-titleContainer">
                 <h3 class="articleContainer-article-titleContainer-title">Ceci est l'article 1 et efe koefk okapz </h3>
                 <div class="articleContainer-article-details">
@@ -47,7 +47,7 @@
               </div>
             </div></a></div>
         <div class="articleContainer">
-          <div class="articleContainer-article"><a href="#"><img class="articleContainer-article-img" src="/man-pan-400429-unsplash.fc8ca040.jpg">
+          <div class="articleContainer-article"><a href="#"><img class="articleContainer-article-img" src="man-pan-400429-unsplash.463e8c38.jpg">
               <div class="articleContainer-article-titleContainer">
                 <h3 class="articleContainer-article-titleContainer-title">Ceci est l'article 1 et efe koefk okapz </h3>
                 <div class="articleContainer-article-details">
@@ -57,7 +57,7 @@
               </div></a></div>
         </div>
         <div class="articleContainer">
-          <div class="articleContainer-article"><a href="#"><img class="articleContainer-article-img" src="/man-pan-400429-unsplash.fc8ca040.jpg">
+          <div class="articleContainer-article"><a href="#"><img class="articleContainer-article-img" src="man-pan-400429-unsplash.463e8c38.jpg">
               <div class="articleContainer-article-titleContainer">
                 <h3 class="articleContainer-article-titleContainer-title">Ceci est l'article 1 et efe koefk okapz </h3>
                 <div class="articleContainer-article-details">
@@ -74,7 +74,7 @@
         <div class="bonPlansContainer">
           <div class="bonPlansContainer-main"><a class="bonPlanContainer-a" href="#">
               <div class="recommandationElement">
-                <div class="background"><img class="backgroundImg" src="/man-pan-400429-unsplash.fc8ca040.jpg" alt="backgound hotel"></div>
+                <div class="background"><img class="backgroundImg" src="man-pan-400429-unsplash.463e8c38.jpg" alt="backgound hotel"></div>
                 <div class="mainElementContainerMainPage">
                   <div class="elementContainerMainPage">
                     <div class="elementTitleMainPage">L'hotel de la dame de Kill Bill</div>
@@ -92,7 +92,7 @@
         <div class="bonPlansContainer">
           <div class="bonPlansContainer-main"><a class="bonPlanContainer-a" href="#">
               <div class="recommandationElement">
-                <div class="background"><img class="backgroundImg" src="/man-pan-400429-unsplash.fc8ca040.jpg" alt="backgound hotel"></div>
+                <div class="background"><img class="backgroundImg" src="man-pan-400429-unsplash.463e8c38.jpg" alt="backgound hotel"></div>
                 <div class="mainElementContainerMainPage">
                   <div class="elementContainerMainPage">
                     <div class="elementTitleMainPage">L'hotel de la dame de Kill Bill</div>
@@ -110,7 +110,7 @@
         <div class="bonPlansContainer">
           <div class="bonPlansContainer-main"><a class="bonPlanContainer-a" href="#">
               <div class="recommandationElement">
-                <div class="background"><img class="backgroundImg" src="/man-pan-400429-unsplash.fc8ca040.jpg" alt="backgound hotel"></div>
+                <div class="background"><img class="backgroundImg" src="man-pan-400429-unsplash.463e8c38.jpg" alt="backgound hotel"></div>
                 <div class="mainElementContainerMainPage">
                   <div class="elementContainerMainPage">
                     <div class="elementTitleMainPage">L'hotel de la dame de Kill Bill</div>
@@ -164,6 +164,6 @@
         </div>
       </div>
     </footer>
-    <script src="/src.9b8776ed.js"></script>
+    <script src="src.be7f595a.js"></script>
   </body>
 </html>
