@@ -1203,7 +1203,7 @@ a .recommandationElement {
 
 .articles-title {
   width: 60%;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   color: #000;
   margin-top: 7rem;
   margin-left: 2.6rem; }
@@ -1266,7 +1266,7 @@ a .recommandationElement {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      font-size: 1.6rem;
+      font-size: 2rem;
       color: #000;
       margin: 4rem 2.5rem; }
       @media (min-width: 1024px) {
@@ -1278,11 +1278,14 @@ a .recommandationElement {
       justify-content: space-between;
       color: rgba(0, 0, 0, 0.5);
       font-size: 1.2rem;
-      width: 85%; }
+      white-space: nowrap;
+      width: 85%;
+      padding-top: 0px; }
       @media (min-width: 1024px) {
         .articleContainer-article-details {
           align-items: center;
           width: 30%;
+          padding-top: 10px;
           margin: 0 auto; } }
       .articleContainer-article-details-date {
         position: relative; }
