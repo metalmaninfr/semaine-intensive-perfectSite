@@ -3,7 +3,7 @@
   @include for-size(desktop-up) {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 0rem;
+    margin-top: 12rem;
   }
 }
 .articles-title {
@@ -14,13 +14,15 @@
   margin-left: 2.6rem;
   @include for-size(desktop-up) {
     width: 27.9%;
-    margin-top: 3.2rem;
     margin-left: 4rem;
   }
   &-h2 {
     position: relative;
     width: 15rem;
     margin-bottom: 3rem;
+    @include for-size(desktop-up) {
+      width: 18rem;
+    }
     &::after {
       content: " ";
       height: .3rem;

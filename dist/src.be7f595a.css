@@ -1199,7 +1199,7 @@ a .recommandationElement {
     .articlesContainer {
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 0rem; } }
+      margin-top: 12rem; } }
 
 .articles-title {
   width: 60%;
@@ -1210,12 +1210,14 @@ a .recommandationElement {
   @media (min-width: 1024px) {
     .articles-title {
       width: 27.9%;
-      margin-top: 3.2rem;
       margin-left: 4rem; } }
   .articles-title-h2 {
     position: relative;
     width: 15rem;
     margin-bottom: 3rem; }
+    @media (min-width: 1024px) {
+      .articles-title-h2 {
+        width: 18rem; } }
     .articles-title-h2::after {
       content: " ";
       height: .3rem;
