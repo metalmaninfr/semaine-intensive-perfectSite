@@ -98,7 +98,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({8:[function(require,module,exports) {
+})({11:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -128,7 +128,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],7:[function(require,module,exports) {
+},{}],10:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -159,25 +159,73 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":8}],6:[function(require,module,exports) {
+},{"./bundle-url":11}],8:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":7}],5:[function(require,module,exports) {
+},{"_css_loader":10}],7:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":7}],2:[function(require,module,exports) {
+},{"_css_loader":10}],2:[function(require,module,exports) {
 'use strict';
 
 require('flexboxgrid');
 
 require('./styles/styles.scss');
-},{"flexboxgrid":6,"./styles/styles.scss":5}],18:[function(require,module,exports) {
+
+var sliderImages = document.querySelectorAll('.slide-in');
+
+function checkSlide(e) {
+  sliderImages.forEach(function (sliderImage) {
+    var slidInAt = window.scrollY + window.innerHeight - sliderImage.height / 2;
+    var imageBottom = sliderImage.offsetTop + sliderImage.height;
+    var isHalfShown = slidInAt > sliderImage.offsetTop;
+    var isNotScrollPast = window.scrollY < imageBottom;
+    if (isHalfShown && isNotScrollPast) {
+      sliderImage.classList.add('active');
+    } else {
+      sliderImage.classList.remove('avtive');
+    }
+  });
+}
+
+window.addEventListener('scroll', checkSlide);
+
+var slider = document.querySelector('.items');
+var isDown = false;
+var startX = void 0;
+var scrollLeft = void 0;
+
+slider.addEventListener('mousedown', function (e) {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+
+slider.addEventListener('mouseleave', function () {
+  isDown = false;
+  slider.classList.remove('active');
+});
+
+slider.addEventListener('mouseup', function () {
+  isDown = false;
+  slider.classList.remove('active');
+});
+
+slider.addEventListener('mousemove', function (e) {
+  if (!isDown) return;
+  e.preventDefault();
+  var x = e.pageX - slider.offsetLeft;
+  var walk = (x - startX) * 1.5;
+  slider.scrollLeft = scrollLeft - walk;
+});
+},{"flexboxgrid":8,"./styles/styles.scss":7}],21:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -206,7 +254,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '59436' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '53405' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -347,5 +395,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[18,2], null)
+},{}]},{},[21,2], null)
 //# sourceMappingURL=/src.be7f595a.map
