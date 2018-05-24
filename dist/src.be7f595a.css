@@ -1125,65 +1125,65 @@ html {
       bottom: 10%;
       right: 10%; }
 
-.bonPlansContianer {
+.bonPlansContainer {
   border-bottom: 2px solid rgba(0, 0, 0, 0.1); }
   @media (min-width: 1024px) {
-    .bonPlansContianer {
+    .bonPlansContainer {
       border: none; } }
-  .bonPlansContianer-main {
+  .bonPlansContainer-main {
     width: 87.2vw;
     margin: 0 auto; }
     @media (min-width: 1024px) {
-      .bonPlansContianer-main {
+      .bonPlansContainer-main {
         width: 85%;
         margin-left: 8rem;
         margin-right: 7rem; } }
 
-a .recommandationElement {
+.bonPlanContainer-a .recommandationElement {
   margin: 2rem 0; }
   @media (min-width: 1024px) {
-    a .recommandationElement {
+    .bonPlanContainer-a .recommandationElement {
       margin-top: 8rem; } }
-  a .recommandationElement .background {
+  .bonPlanContainer-a .recommandationElement .background {
     height: 105px;
     width: 327px;
     overflow: hidden;
     position: relative;
     margin-bottom: 16px; }
     @media (min-width: 1024px) {
-      a .recommandationElement .background {
+      .bonPlanContainer-a .recommandationElement .background {
         height: 230px;
         width: 360px; } }
-    a .recommandationElement .background .backgroundImg {
+    .bonPlanContainer-a .recommandationElement .background .backgroundImg {
       position: absolute;
       bottom: -70px;
       width: 100%; }
-  a .recommandationElement .mainElementContainer {
+  .bonPlanContainer-a .recommandationElement .mainElementContainerMainPage {
     display: flex; }
-    a .recommandationElement .mainElementContainer .elementContainer {
+    .bonPlanContainer-a .recommandationElement .mainElementContainerMainPage .elementContainerMainPage {
       width: 75%; }
-      a .recommandationElement .mainElementContainer .elementContainer .elementTitle {
+      .bonPlanContainer-a .recommandationElement .mainElementContainerMainPage .elementContainerMainPage .elementTitleMainPage {
         font-size: 16px;
         font-weight: bold;
         margin-bottom: 25px; }
-      a .recommandationElement .mainElementContainer .elementContainer .elementDescriptionContainer {
+      .bonPlanContainer-a .recommandationElement .mainElementContainerMainPage .elementContainerMainPage .elementDescriptionContainerMainPage {
         display: flex;
         justify-content: space-between; }
-        a .recommandationElement .mainElementContainer .elementContainer .elementDescriptionContainer .elementAdresse {
+        .bonPlanContainer-a .recommandationElement .mainElementContainerMainPage .elementContainerMainPage .elementDescriptionContainerMainPage .elementAdresseMainPage {
           font-size: 14px;
           font-weight: normal; }
-        a .recommandationElement .mainElementContainer .elementContainer .elementDescriptionContainer .divide {
+        .bonPlanContainer-a .recommandationElement .mainElementContainerMainPage .elementContainerMainPage .elementDescriptionContainerMainPage .divideMainPage {
           background: #000;
           width: 39px;
           height: 1px;
           margin: auto; }
-    a .recommandationElement .mainElementContainer .numberContainer {
+    .bonPlanContainer-a .recommandationElement .mainElementContainerMainPage .numberContainerMainPage {
       width: 50px;
       height: 50px;
       border-radius: 50%;
       display: flex;
       background: #F5F5F5; }
-      a .recommandationElement .mainElementContainer .numberContainer .numberElement {
+      .bonPlanContainer-a .recommandationElement .mainElementContainerMainPage .numberContainerMainPage .numberElementMainPage {
         font-size: 16px;
         font-weight: bold;
         margin: auto; }
@@ -1192,6 +1192,42 @@ a .recommandationElement {
   .mainPageContainerarticles {
     display: flex;
     flex-wrap: wrap; } }
+
+.profileHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 10rem; }
+  .profileHeader-picture {
+    height: 10rem;
+    width: 10rem; }
+    .profileHeader-picture img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%; }
+  .profileHeader-text {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    width: 60%; }
+
+.profileConnect {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem; }
+  .profileConnect input {
+    padding: 1rem 10rem;
+    background: #FFFAEF;
+    font-size: 1.8rem;
+    border: none; }
+
+.profileContainer {
+  margin-top: 4.5rem;
+  margin-left: 2.4rem; }
+  .profileContainer div {
+    font-size: 1.8rem;
+    margin-bottom: 4.7rem; }
 
 .articlesContainer {
   margin-bottom: 10rem; }

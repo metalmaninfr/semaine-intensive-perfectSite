@@ -98,7 +98,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({21:[function(require,module,exports) {
+})({10:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -128,7 +128,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],20:[function(require,module,exports) {
+},{}],9:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -159,19 +159,19 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":21}],19:[function(require,module,exports) {
+},{"./bundle-url":10}],8:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":20}],18:[function(require,module,exports) {
+},{"_css_loader":9}],7:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":20}],13:[function(require,module,exports) {
+},{"_css_loader":9}],2:[function(require,module,exports) {
 'use strict';
 
 require('flexboxgrid');
@@ -225,7 +225,7 @@ slider.addEventListener('mousemove', function (e) {
   var walk = (x - startX) * 1.5;
   slider.scrollLeft = scrollLeft - walk;
 });
-},{"flexboxgrid":19,"./styles/styles.scss":18}],22:[function(require,module,exports) {
+},{"flexboxgrid":8,"./styles/styles.scss":7}],41:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -254,7 +254,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '57816' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '49641' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -395,5 +395,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[22,13], null)
+},{}]},{},[41,2], null)
 //# sourceMappingURL=/src.be7f595a.map

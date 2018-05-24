@@ -141,7 +141,7 @@
 }
 
 
-.bonPlansContianer {
+.bonPlansContainer {
   border-bottom: 2px solid rgba(#000, .1);
   @include for-size(desktop-up) {
     border: none;
@@ -156,7 +156,7 @@
     }
   }
 }
-a {
+.bonPlanContainer-a {
   .recommandationElement {
     margin: 2rem 0;
     @include for-size(desktop-up) {
@@ -178,23 +178,23 @@ a {
         width: 100%;
       }
     }
-    .mainElementContainer {
+    .mainElementContainerMainPage {
       display: flex;
-      .elementContainer {
+      .elementContainerMainPage {
         width: 75%;
-        .elementTitle {
+        .elementTitleMainPage {
           font-size: 16px;
           font-weight: bold;
           margin-bottom: 25px;
         }
-        .elementDescriptionContainer {
+        .elementDescriptionContainerMainPage {
           display: flex;
           justify-content: space-between;
-          .elementAdresse {
+          .elementAdresseMainPage {
             font-size: 14px;
             font-weight: normal;
           }
-          .divide {
+          .divideMainPage {
             background: #000;
             width: 39px;
             height: 1px;
@@ -202,13 +202,13 @@ a {
           }
         }
       }
-      .numberContainer {
+      .numberContainerMainPage {
         width: 50px;
         height: 50px;
         border-radius: 50%;
         display: flex;
         background: #F5F5F5;
-        .numberElement {
+        .numberElementMainPage {
           font-size: 16px;
           font-weight: bold;
           margin: auto;
